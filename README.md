@@ -5,7 +5,7 @@ This theme uses GTK's `mix()` function against the **official Libadwaita base he
 
 > *Note: This is intended to be used with Plasma's tint windows with accent colour option*
 
-[Demo Video](https://github.com/user-attachments/assets/34e03f30-f587-4099-a23c-2c8b6c73a730)
+[Demo.webm](https://github.com/user-attachments/assets/a6f2326f-1a6f-437a-aaa6-b96124f12ae7)
 
 ## Pre-requisite
 
