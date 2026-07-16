@@ -76,3 +76,7 @@ toggle:checked {
 .inline {
   background-color: rgba(0, 0, 0, 0);
 }
+
+@import 'window_controls.css';
+@import 'colors.css';
+@import 'kde_window_geometry.css';

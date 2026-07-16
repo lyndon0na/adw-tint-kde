@@ -1,21 +1,31 @@
-# Adwaita Accent Tint
-A lightweight, native-feeling CSS theme for GNOME 49+ (GTK4/Libadwaita) that subtly blends your system accent color into the application backgrounds.
+# Adwaita Accent Tint for KDE Plasma
+A dynamic libadwaita theme for KDE Plasma users that inherits accent colours from Plasma; uses a window geometry that looks consistent with other KDE apps (QT and GTK3); and has improved window decorations that mimic the Breeze theme, all while **tinting the windows with the accent colour**.
 
 This theme uses GTK's `mix()` function against the **official Libadwaita base hex codes**. The result is a 7.5% tint that preserves all native shadows, card depths, and high-contrast elements.
 
+> *Note: This is intended to be used with Plasma's tint windows with accent colour option*
 
-https://github.com/user-attachments/assets/d747ee28-6757-4348-bf28-1a60e32ef28a
+## Pre-requisite
 
+### Plasma Tint 
+Enable the tint windows with accent colour option:
 
+1. Go to *System Settings* > *Colours & Themes* > *Colours*
+2. Hover over a preferred colour scheme and click on the pencil icon
+3. Go to *Options* and Select *Tint all colours with accent colour* 
+4. Use the slider below to control the strength of the tint (Use a lower strength to achieve consistency with the tint in this theme)
 
 ## Installation
 
-### 1. Apply to Native Apps
-Copy the CSS file into your local GTK4 config directory:
+### 1. Initial setup
+Copy the files into your local GTK4 config directory:
 
-1. Open or create `~/.config/gtk-4.0/gtk.css`.
-2. Paste the contents of the `gtk.css` file from this repository.
-3. Fully close and reopen any GTK4 app (like Settings or Files) to see the changes.
+1. Open or create `~/.config/gtk-4.0/`.
+2. Paste the contents of this repository here.
+3. Go to Plasma colour settings and select a colour scheme.
+4. Fully close and reopen any GTK4 app to see the changes.
+
+> *Bonus tip: If you want to achieve the effect as shown in the video above, ensure that you select "Accent colour from wallpaper" option from the dropdown menu in Plasma's colour settings.*
 
 ### 2. Apply to Flatpak Apps
 Because Flatpak applications run in an isolated sandbox, they cannot see your custom CSS by default. You need to grant them read-only access to your config folder.
@@ -23,12 +33,5 @@ Because Flatpak applications run in an isolated sandbox, they cannot see your cu
 Run this command in your terminal:
 ```bash
 flatpak override --user --filesystem=xdg-config/gtk-4.0:ro
-```
+``
 
-## Donate
-Send some Bitcoin over Lightning to: pakovm@getalby.com
-
-
-<p align="center">
-<img width="449" height="449" alt="lnqrsmall" src="https://github.com/user-attachments/assets/50a49464-b88f-4c17-9f2a-48d8ba2e9f72" />
-</p>
