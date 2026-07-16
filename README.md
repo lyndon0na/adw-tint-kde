@@ -36,4 +36,9 @@ Run this command in your terminal:
 ```bash
 flatpak override --user --filesystem=xdg-config/gtk-4.0:ro
 ```
+## Credits 
+This project is built on the primary efforts of: 
 
+- PakoVM's [Adwaita Accent Tint](https://github.com/pakovm-git/Adwaita-Accent-Tint) project 
+- The [Rewaita](https://github.com/swordpuffin/Rewaita) project 
+- The KDE Plasma team's efforts to bridge the gap between Plasma and libadwaita
