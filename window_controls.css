@@ -62,3 +62,20 @@ window.maximized > * windowcontrols:not(.rewaita-display) > button.maximize > im
     color: @window_fg_color;
     transform: rotate(45deg) scale(0.5);
 }
+
+/* 窗口图标（标题栏左侧）：悬停不再有黑底/反色 */
+windowcontrols:not(.rewaita-display) image:hover {
+    background-color: transparent;
+    color: @window_fg_color;
+}
+
+/* 只给 最小化/最大化/关闭 三个按钮保留原来的反色悬停 */
+windowcontrols:not(.rewaita-display) > button > image:hover {
+    background-color: @window_fg_color;
+    color: @window_bg_color;
+}
+
+/*headerbar, .titlebar {
+    background-color: @theme_titlebar_background_breeze;
+    color: @theme_titlebar_foreground_breeze;
+}*/
